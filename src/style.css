@@ -1,0 +1,139 @@
+@import url(./assets/css/footer.css);
+@import url(./assets/css/showcase.css);
+
+.header{
+  background-image: none;
+}
+/* :root{
+  --grey: rgb()
+} */
+@font-face {
+  font-family: 'Gotham HTF Bold';
+  src: url(./assets/fonts/gothamhtf-bold-webfont.ttf);
+  font-style: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Gotham HTF Book Regular';
+  src: url(./assets/fonts/gothamhtf-book-webfont.ttf);
+  font-style: normal;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+.header__title{
+  font-family: "Gotham HTF Bold";
+  font-size: 7vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto
+}
+
+.header__menu{
+  list-style-type: none;
+}
+
+.menu__item{
+  font-family: 'Gotham HTF Book Regular';
+  margin-bottom:40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+/* Tile container */
+/* .container{
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-auto-rows: minmax(300px, auto);
+  width: vw;
+  color:white;
+  background-color: blueviolet;
+} */
+
+
+  /* text-align: center;
+  margin: auto;
+  word-break: break-all; */
+/* .tile{
+  display: grid;
+  margin: 0;
+  place-items: center;
+} */
+  /* content: "";
+  align-content: center; */
+/* .tile:before {
+
+  place-items: center;
+  display: block;
+  height: 0;
+  width: 0;
+  padding-bottom: 100%;
+  z-index: -1;
+} */
+
+
+.tile__heading{
+  font-family: "Gotham HTF Bold";
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.tile__heading--thin{
+  font-family: "Gotham HTF Book Regular";
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.tile__subtitle{
+  font-family: "Gotham HTF Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#hamsa-tile{
+  background-image: url('./assets/images/coffee_newspaper.jpg');
+  background-size: cover;
+}
+
+#happypoints-tile {
+  background-image: url('./assets/images/walking.jpeg');
+  background-size: cover;
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-rows: 1fr;
+  color:white;
+/*   grid-gap: 20px; */
+}
+.tile {
+  background: grey;
+  display: flex;
+  place-items: center;
+  padding: auto;
+}
+.inside{
+  text-align: center;
+  margin: auto;
+}
+.tile:before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  padding-bottom: calc(1/1 * 100%);
+}
+/* Tiles stack in screen <700px */
+@media screen and (max-width:700px) {
+  .tile-grid{
+    grid-template-columns: repeat(1, 100%);
+  }
+}

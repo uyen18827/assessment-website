@@ -1,0 +1,54 @@
+.footer {
+  width: vw;
+}
+
+.footer__email{
+  font-family: "Gotham HTF Bold";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer__menu{
+
+}
+
+.footer__socials{
+
+}
+
+.footer__container{
+font-size: 13px;
+font-family: 'Gotham HTF Book Regular';
+text-align: center;
+margin: auto;
+font-weight: 600;
+}
+
+.footer__links{
+
+}
+
+.footer__links:not(:last-child):after{
+    content: " |"
+}
+
+.email__button {
+    border: none;
+    background-color: black;
+    height:40px;
+    width:40px;
+    cursor:pointer;
+    color:white;
+    text-transform: uppercase;
+}
+
+.email__button:hover {
+   background-color: blue;
+    color:white;
+}
+
+.email__input{
+/* border: black */
+height: 30px;
+width: 200px;
+}
