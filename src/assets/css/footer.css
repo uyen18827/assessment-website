@@ -53,17 +53,7 @@ padding-bottom: 30px;
     content: " |"
 }
 
-.email__button {
-  font-family: "Gotham HTF Bold";
-  border: none;
-  background-color: black;
-  height:40px;
-  width:40px;
-  cursor:pointer;
-  color:white;
-  text-transform: uppercase;
-  font-weight: 700;
-}
+
 
 .email__button:hover {
   background-color: blue;

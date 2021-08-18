@@ -1,0 +1,32 @@
+.navbar{
+    background-color: white;
+    width: 25%;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    z-index: 3;
+}
+
+.navbar.active{
+    display: block;
+}
+
+.hamburger{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 4;
+}
+
+@media screen and (max-width:700px){
+    .navbar{
+        width:100%;
+    }
+    #menu-default{
+        display: none;
+    }
+    .header{
+        height: 50vh;
+    }
+}
+

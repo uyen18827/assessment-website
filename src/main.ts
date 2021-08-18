@@ -1,8 +1,12 @@
 import './style.css'
 
-// const app = document.querySelector<HTMLDivElement>('#app')!
+let hamburger = document.querySelector('.hamburger');
+let menu = document.querySelector('.navbar');
 
-// app.innerHTML = `
-//   <h1>Hello Vite!</h1>
-//   <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-// `
+hamburger!.addEventListener('click', () => {
+    hamburger!.classList.toggle('isactive');
+    menu!.classList.toggle('active');
+
+});
+
+// alert('heeeewwoo uwu')

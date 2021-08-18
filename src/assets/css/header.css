@@ -19,7 +19,7 @@
   margin: auto;  
   grid-column: col 1 / span 5;
   grid-row: row 2;
-  z-index: 20;
+  z-index: 2;
 }
 
 .header__menu{
