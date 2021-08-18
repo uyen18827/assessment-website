@@ -1,9 +1,9 @@
 
 .header{
   background: rgb(255,255,255),url(./assets/images/header.jpg);
-  background: -moz-linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 35%), url(../images/header.jpg);
-  background: -webkit-linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 35%), url(../images/header.jpg);
-  background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 35%), url(../images/header.jpg);
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 35%), url(../images/header.jpg);
+  background: -webkit-linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 35%), url(../images/header.jpg);
+  background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 35%), url(../images/header.jpg);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1), url(../images/header.jpg);
   background-size:cover;
   display: grid;
