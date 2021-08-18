@@ -1,0 +1,60 @@
+
+.tile__heading{
+  font-family: "Gotham HTF Bold";
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.tile__heading--thin{
+  font-family: "Gotham HTF Book Regular";
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.tile__subtitle{
+  font-family: "Gotham HTF Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#hamsa-tile{
+  background-image: url('../images/coffee_newspaper.jpg');
+  background-size: cover;
+}
+
+#happypoints-tile {
+  background-image: url('../images/walking.jpeg');
+  background-size: cover;
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-rows: 1fr;
+  color:white;
+/*   grid-gap: 20px; */
+}
+.tile {
+  background: grey;
+  display: flex;
+  place-items: center;
+  padding: auto;
+}
+.inside{
+  text-align: center;
+  margin: auto;
+}
+.tile:before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  padding-bottom: calc(1/1 * 100%);
+}
+/* Tiles stack in screen <700px */
+@media screen and (max-width:700px) {
+  .tile-grid{
+    grid-template-columns: repeat(1, 100%);
+  }
+}

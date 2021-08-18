@@ -1,31 +1,37 @@
 .footer {
+  font-family: 'Gotham HTF Book Regular';
   width: vw;
+  padding-bottom: 50px;
+  /* margin-top: 50px; */
+  padding-top: 50px;
 }
 
-.footer__email{
+.footer__heading{
   font-family: "Gotham HTF Bold";
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 10px
 }
 
 .footer__menu{
-
+  list-style-type: none;
 }
 
 .footer__socials{
+  padding-top: 20px;
 
 }
 
 .footer__container{
 font-size: 13px;
-font-family: 'Gotham HTF Book Regular';
 text-align: center;
 margin: auto;
 font-weight: 600;
+letter-spacing: 2px;
 }
 
 .footer__links{
-
+  font-weight:400;
 }
 
 .footer__links:not(:last-child):after{
@@ -33,22 +39,42 @@ font-weight: 600;
 }
 
 .email__button {
-    border: none;
-    background-color: black;
-    height:40px;
-    width:40px;
-    cursor:pointer;
-    color:white;
-    text-transform: uppercase;
+  font-family: "Gotham HTF Bold";
+  border: none;
+  background-color: black;
+  height:40px;
+  width:40px;
+  cursor:pointer;
+  color:white;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .email__button:hover {
-   background-color: blue;
-    color:white;
+  background-color: blue;
+  color:white;
 }
 
 .email__input{
-/* border: black */
-height: 30px;
-width: 200px;
+height: 36px;
+width: 400px;
+ border-style:solid;
+border-width:thin;
+border-color: black;
+margin-right: 5px
+}
+
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+	.email__input
+	{
+		width: 70%;
+		/* margin: 0 auto; */
+	}
+
+}
+
+.spacing {
+text-align: center;
+width: 2em;
 }

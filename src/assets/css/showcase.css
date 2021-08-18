@@ -1,15 +1,35 @@
 .showcase {
+   font-family: 'Gotham HTF Bold';
+}
 
+.showcase__container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 5fr));
+  grid-template-rows: 1;
 }
 
 .showcase__title{
-  font-family: 'Gotham HTF Bold';
   text-transform: uppercase;
   font-weight: 100;
   text-align: center;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.showcase__tile{
+  background: grey;
+  display: flex;
+  place-items: center;
+  padding: auto;
+  max-height: 290px;
+}
+.showcase__tile:before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  padding-bottom: calc(1/1 * 100%);
 }
 
 .showcase__img{
