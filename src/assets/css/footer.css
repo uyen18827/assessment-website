@@ -13,21 +13,36 @@
   margin-bottom: 10px
 }
 
-.footer__menu{
+.footer__container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.footer__contacts{
+  margin-left: 50px;
+}
+
+.footer__customer-care{
+  margin-top:0;
   list-style-type: none;
+  font-weight:500;
+  font-size: small;
+  line-height: 2em;
+  text-transform: capitalize;
 }
 
 .footer__socials{
   padding-top: 20px;
-
 }
 
-.footer__container{
+.footer__quick-links{
 font-size: 13px;
 text-align: center;
 margin: auto;
 font-weight: 600;
 letter-spacing: 2px;
+padding-top: 30px;
+padding-bottom: 30px;
 }
 
 .footer__links{
@@ -56,12 +71,17 @@ letter-spacing: 2px;
 }
 
 .email__input{
-height: 36px;
-width: 400px;
- border-style:solid;
-border-width:thin;
-border-color: black;
-margin-right: 5px
+  height: 36px;
+  width: 400px;
+  border-style:solid;
+  border-width:thin;
+  border-color: black;
+  margin-right: 5px
+  }
+
+  
+.icon-spacing {
+  width: 2em;
 }
 
 @media only screen and (min-width : 150px) and (max-width : 780px)
@@ -71,10 +91,19 @@ margin-right: 5px
 		width: 70%;
 		/* margin: 0 auto; */
 	}
+  .footer__contacts{
+  margin-left: 20px;
+  }
+  .footer__container{
+  grid-template-columns: 1fr;
+  }
+  .icon-spacing {
+  width: 1.5em;
+  }
+  ul.footer__customer-care{
+    padding:0;
+    margin-left:20px;
+    margin-top:20px;
+  }
 
-}
-
-.spacing {
-text-align: center;
-width: 2em;
 }

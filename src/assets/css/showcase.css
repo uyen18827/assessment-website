@@ -1,5 +1,5 @@
 .showcase {
-   font-family: 'Gotham HTF Bold';
+   font-family: 'Gotham HTF Book Regular';
 }
 
 .showcase__container{
@@ -15,11 +15,14 @@
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
 }
 
 .showcase__tile{
-  background: grey;
-  display: flex;
+  /* background: grey; */
+  /* display: flex; */
+  align-self: center;
   place-items: center;
   padding: auto;
   max-height: 290px;
@@ -32,7 +35,27 @@
   padding-bottom: calc(1/1 * 100%);
 }
 
-.showcase__img{
-  z-index: -1;
+#showcase-1{
+  background-image: url(../images/showcase-1.jpg);
+  background-repeat: no-repeat;
+}
 
+#showcase-2{
+  background-image: url(../images/showcase-2.jpg);
+  background-repeat: no-repeat;
+}
+
+#showcase-3{
+  background-image: url(../images/showcase-3.jpg);
+  background-repeat: no-repeat;
+}
+
+#showcase-4{
+  background-image: url(../images/showcase-4.jpg);
+  background-repeat: no-repeat;
+}
+
+#showcase-5{
+  background-image: url(../images/showcase-5.jpg);
+  background-repeat: no-repeat;
 }
